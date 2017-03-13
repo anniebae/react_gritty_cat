@@ -29648,7 +29648,7 @@ var App = function (_Component) {
 	}, {
 		key: 'titleSwitch',
 		value: function titleSwitch() {
-			document.getElementsByClassName('main-title')[0].innerHTML = "gritty cat";
+			document.getElementsByClassName('landingTitle')[0].innerHTML = "gritty cat";
 		}
 	}]);
 
