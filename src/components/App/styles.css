@@ -1,0 +1,8 @@
+html, body {
+  margin: 0;
+  font-family: Helvetica, Arial;
+  font-weight: 100; }
+  html .appWrapper .landingPage .landingTitle, body .appWrapper .landingPage .landingTitle {
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */

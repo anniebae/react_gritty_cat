@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, IndexLink, Link, hashHistory } from 'react-router'
 
+import css from './styles.css'
 import Home from '../Home'
 import English from '../English'
 import Korean from '../Korean'
@@ -10,10 +11,10 @@ import Korean from '../Korean'
 class App extends Component {
 	render() {
 		return(
-			<div>
-				<div>
+			<div className="appWrapper">
+				<div className="landingPage">
 					<Link to="/home">
-						<p className="main-title" onClick={this.titleSwitch}>Let's get gritty</p>
+						<p className="landingTitle" onClick={this.titleSwitch}>let's <br />get <br/>GRITTY</p>
 					</Link>
 				</div>
 
