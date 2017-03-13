@@ -12,8 +12,8 @@ class App extends Component {
 		return(
 			<div>
 				<div>
-					<Link to="/">
-						<p>universal text</p>
+					<Link to="/home">
+						<p className="main-title" onClick={this.titleSwitch}>Let's get gritty</p>
 					</Link>
 				</div>
 
@@ -24,6 +24,10 @@ class App extends Component {
 			</div>
 		)
 	}
+
+	titleSwitch(){
+		document.getElementsByClassName('main-title')[0].innerHTML = "gritty cat"
+	}
 }
 
 var appContainer = document.querySelector("#app");
@@ -33,7 +37,7 @@ var appContainer = document.querySelector("#app");
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
-			<IndexRoute component={Home} />
+			<Route path="home" component={Home} />
 			<Route path="english" component={English} />
 			<Route path="korean" component={Korean} />
 		</Route>

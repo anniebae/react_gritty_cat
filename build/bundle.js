@@ -21778,11 +21778,11 @@ var App = function (_Component) {
 					null,
 					_react2.default.createElement(
 						_reactRouter.Link,
-						{ to: '/' },
+						{ to: '/home' },
 						_react2.default.createElement(
 							'p',
-							null,
-							'universal text'
+							{ className: 'main-title', onClick: this.titleSwitch },
+							'Let\'s get gritty'
 						)
 					)
 				),
@@ -21792,6 +21792,11 @@ var App = function (_Component) {
 					this.props.children
 				)
 			);
+		}
+	}, {
+		key: 'titleSwitch',
+		value: function titleSwitch() {
+			document.getElementsByClassName('main-title')[0].innerHTML = "gritty cat";
 		}
 	}]);
 
@@ -21808,7 +21813,7 @@ _reactDom2.default.render(_react2.default.createElement(
 	_react2.default.createElement(
 		_reactRouter.Route,
 		{ path: '/', component: App },
-		_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+		_react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'english', component: _English2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'korean', component: _Korean2.default })
 	)
