@@ -11,7 +11,6 @@ import grumpycat from '../../img/grumpy_cat.png'
 
 
 class App extends Component {
-
 	render() {
 		return(
 			<div className="appWrapper">
@@ -34,6 +33,15 @@ class App extends Component {
 	titleSwitch(){
 		document.getElementsByClassName('landingTitle')[0].innerHTML = `<img src=${grumpycat} />`;
 	}
+
+	// removeGrittyTitle() {
+	// 	var url = window.location.search;
+	// 	if (url.match("home").length > 0 || url.match("english").length > 0 || url.match("korean").length > 0) {
+	// 		alert('remove grittytitle')
+	// 	}
+	// }
+
+
 }
 
 var appContainer = document.querySelector("#app");

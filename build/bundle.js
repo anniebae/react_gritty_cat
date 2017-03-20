@@ -29711,6 +29711,15 @@ var App = function (_Component) {
 		value: function titleSwitch() {
 			document.getElementsByClassName('landingTitle')[0].innerHTML = '<img src=' + _grumpy_cat2.default + ' />';
 		}
+
+		// removeGrittyTitle() {
+		// 	var url = window.location.search;
+		// 	if (url.match("home").length > 0 || url.match("english").length > 0 || url.match("korean").length > 0) {
+		// 		alert('remove grittytitle')
+		// 	}
+		// }
+
+
 	}]);
 
 	return App;
