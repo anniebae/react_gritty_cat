@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import css from './styles.css'
 
 class Home extends Component {
 	render() {
 		return (
-			<div>Home alone
+			<div className="homeWrapper">Home alone
 				
 				<div>
 					<Link to="/english">

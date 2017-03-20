@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 html, body {
 	margin: 0;
+	padding: 0;
 	font-family: Helvetica, Arial;
 	font-weight: 100;
 
 	.appWrapper {
+
 		.landingPage {
 			.landingTitle {
 				text-align: center;
+				font-family: 'Oswald', sans-serif;
+
+				span.nl {
+					display: block;
+				}
 			}
 		}
 	}

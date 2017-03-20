@@ -7,14 +7,17 @@ import Home from '../Home'
 import English from '../English'
 import Korean from '../Korean'
 
+import grumpycat from '../../img/grumpy_cat.png'
+
 
 class App extends Component {
+
 	render() {
 		return(
 			<div className="appWrapper">
 				<div className="landingPage">
 					<Link to="/home">
-						<p className="landingTitle" onClick={this.titleSwitch}>let's <br />get <br/>GRITTY</p>
+						<p className="landingTitle" onClick={this.titleSwitch}>let's <span className="nl">get</span> GRITTY</p>
 					</Link>
 				</div>
 
@@ -27,8 +30,10 @@ class App extends Component {
 	}
 
 	titleSwitch(){
-		document.getElementsByClassName('landingTitle')[0].innerHTML = "gritty cat"
+		document.getElementsByClassName('landingTitle')[0].innerHTML = `<img src=${grumpycat} />`;
 	}
+
+
 }
 
 var appContainer = document.querySelector("#app");
