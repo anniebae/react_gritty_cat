@@ -17,7 +17,9 @@ class App extends Component {
 			<div className="appWrapper">
 				<div className="landingPage">
 					<Link to="/home">
-						<p className="landingTitle" onClick={this.titleSwitch}>let's <span className="nl">get</span> GRITTY</p>
+						<p className="landingTitle grittyTitle" onClick={this.titleSwitch}>let's <span className="nl">get</span> GRITTY
+							<span className="enter">ENTER &#8594;</span>
+						</p>
 					</Link>
 				</div>
 
@@ -32,8 +34,6 @@ class App extends Component {
 	titleSwitch(){
 		document.getElementsByClassName('landingTitle')[0].innerHTML = `<img src=${grumpycat} />`;
 	}
-
-
 }
 
 var appContainer = document.querySelector("#app");

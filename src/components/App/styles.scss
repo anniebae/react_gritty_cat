@@ -9,13 +9,69 @@ html, body {
 	.appWrapper {
 
 		.landingPage {
+			// .landingTitle {
+			// 	text-align: center;
+			// 	font-family: 'Oswald', sans-serif;
+
+			// 	span.nl {
+			// 		display: block;
+			// 	}
+			// }
+			a {
+				text-decoration: none;
+			}
+			.grittyTitle {
+				position: absolute;
+			    height: 60vh;
+			    margin-top: -30vh;
+			    width: 120vw;
+			    margin-left: -60vw;
+			    top: 50%;
+			    left: 50%;
+			}
 			.landingTitle {
+				font-size: 50px;
 				text-align: center;
 				font-family: 'Oswald', sans-serif;
+				-webkit-animation: color-change 2s infinite;
+				-moz-animation: color-change 2s infinite;
+				-o-animation: color-change 2s infinite;
+				-ms-animation: color-change 2s infinite;
+				animation: color-change 2s infinite;
 
 				span.nl {
 					display: block;
 				}
+				span.enter {
+					display: block;
+					font-size: 14px;
+				}
+			}
+
+			@-webkit-keyframes color-change {
+				0% { color: #ddd; }
+				50% { color: #07f7cf; }
+				100% { color: #ddd; }
+			}
+			@-moz-keyframes color-change {
+				0% { color: #ddd; }
+				50% { color: #07f7cf; }
+				100% { color: #ddd; }
+			}
+			@-ms-keyframes color-change {
+				0% { color: #ddd; }
+				50% { color: #07f7cf; }
+				100% { color: #ddd; }
+			}
+			@-o-keyframes color-change {
+				0% { color: #ddd; }
+				50% { color: #07f7cf; }
+				100% { color: #ddd; }
+			}
+			@keyframes color-change {
+				0% { color: #ddd; }
+				50% { color: #07f7cf; }
+				100% { color: #ddd; }
 			}
 		}
 	}

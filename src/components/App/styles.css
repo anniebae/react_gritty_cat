@@ -4,10 +4,64 @@ html, body {
   padding: 0;
   font-family: Helvetica, Arial;
   font-weight: 100; }
+  html .appWrapper .landingPage a, body .appWrapper .landingPage a {
+    text-decoration: none; }
+  html .appWrapper .landingPage .grittyTitle, body .appWrapper .landingPage .grittyTitle {
+    position: absolute;
+    height: 60vh;
+    margin-top: -30vh;
+    width: 120vw;
+    margin-left: -60vw;
+    top: 50%;
+    left: 50%; }
   html .appWrapper .landingPage .landingTitle, body .appWrapper .landingPage .landingTitle {
+    font-size: 50px;
     text-align: center;
-    font-family: 'Oswald', sans-serif; }
+    font-family: 'Oswald', sans-serif;
+    -webkit-animation: color-change 2s infinite;
+    -moz-animation: color-change 2s infinite;
+    -o-animation: color-change 2s infinite;
+    -ms-animation: color-change 2s infinite;
+    animation: color-change 2s infinite; }
     html .appWrapper .landingPage .landingTitle span.nl, body .appWrapper .landingPage .landingTitle span.nl {
       display: block; }
+    html .appWrapper .landingPage .landingTitle span.enter, body .appWrapper .landingPage .landingTitle span.enter {
+      display: block;
+      font-size: 14px; }
+@-webkit-keyframes color-change {
+  0% {
+    color: #ddd; }
+  50% {
+    color: #07f7cf; }
+  100% {
+    color: #ddd; } }
+@-moz-keyframes color-change {
+  0% {
+    color: #ddd; }
+  50% {
+    color: #07f7cf; }
+  100% {
+    color: #ddd; } }
+@-ms-keyframes color-change {
+  0% {
+    color: #ddd; }
+  50% {
+    color: #07f7cf; }
+  100% {
+    color: #ddd; } }
+@-o-keyframes color-change {
+  0% {
+    color: #ddd; }
+  50% {
+    color: #07f7cf; }
+  100% {
+    color: #ddd; } }
+@keyframes color-change {
+  0% {
+    color: #ddd; }
+  50% {
+    color: #07f7cf; }
+  100% {
+    color: #ddd; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -29568,7 +29568,7 @@ exports = module.exports = __webpack_require__(72)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald);", ""]);
 
 // module
-exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: Helvetica, Arial;\n  font-weight: 100; }\n  html .appWrapper .landingPage .landingTitle, body .appWrapper .landingPage .landingTitle {\n    text-align: center;\n    font-family: 'Oswald', sans-serif; }\n    html .appWrapper .landingPage .landingTitle span.nl, body .appWrapper .landingPage .landingTitle span.nl {\n      display: block; }\n\n/*# sourceMappingURL=styles.css.map */\n", ""]);
+exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: Helvetica, Arial;\n  font-weight: 100; }\n  html .appWrapper .landingPage a, body .appWrapper .landingPage a {\n    text-decoration: none; }\n  html .appWrapper .landingPage .grittyTitle, body .appWrapper .landingPage .grittyTitle {\n    position: absolute;\n    height: 60vh;\n    margin-top: -30vh;\n    width: 120vw;\n    margin-left: -60vw;\n    top: 50%;\n    left: 50%; }\n  html .appWrapper .landingPage .landingTitle, body .appWrapper .landingPage .landingTitle {\n    font-size: 50px;\n    text-align: center;\n    font-family: 'Oswald', sans-serif;\n    -webkit-animation: color-change 2s infinite;\n    -moz-animation: color-change 2s infinite;\n    -o-animation: color-change 2s infinite;\n    -ms-animation: color-change 2s infinite;\n    animation: color-change 2s infinite; }\n    html .appWrapper .landingPage .landingTitle span.nl, body .appWrapper .landingPage .landingTitle span.nl {\n      display: block; }\n    html .appWrapper .landingPage .landingTitle span.enter, body .appWrapper .landingPage .landingTitle span.enter {\n      display: block;\n      font-size: 14px; }\n@-webkit-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-moz-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-ms-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-o-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n\n/*# sourceMappingURL=styles.css.map */\n", ""]);
 
 // exports
 
@@ -29683,14 +29683,19 @@ var App = function (_Component) {
 						{ to: '/home' },
 						_react2.default.createElement(
 							'p',
-							{ className: 'landingTitle', onClick: this.titleSwitch },
+							{ className: 'landingTitle grittyTitle', onClick: this.titleSwitch },
 							'let\'s ',
 							_react2.default.createElement(
 								'span',
 								{ className: 'nl' },
 								'get'
 							),
-							' GRITTY'
+							' GRITTY',
+							_react2.default.createElement(
+								'span',
+								{ className: 'enter' },
+								'ENTER \u2192'
+							)
 						)
 					)
 				),
