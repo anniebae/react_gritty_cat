@@ -6,42 +6,32 @@ import css from './styles.css'
 import Home from '../Home'
 import English from '../English'
 import Korean from '../Korean'
+import Enter from '../Enter'
 
 import grumpycat from '../../img/grumpy_cat.png'
 
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			ready: false
+		};
+		console.log(this.state);
+	}
+
+
 	render() {
+		const { loading } = this.props;
+
 		return(
 			<div className="appWrapper">
-				<div className="landingPage">
-					<Link to="/home">
-						<p className="landingTitle grittyTitle" onClick={this.titleSwitch}>let's <span className="nl">get</span> GRITTY
-							<span className="enter">ENTER &#8594;</span>
-						</p>
-					</Link>
-				</div>
-
 				<div>
 					{this.props.children}
 				</div>
-
 			</div>
 		)
 	}
-
-	titleSwitch(){
-		document.getElementsByClassName('landingTitle')[0].innerHTML = `<img src=${grumpycat} />`;
-	}
-
-	// removeGrittyTitle() {
-	// 	var url = window.location.search;
-	// 	if (url.match("home").length > 0 || url.match("english").length > 0 || url.match("korean").length > 0) {
-	// 		alert('remove grittytitle')
-	// 	}
-	// }
-
-
 }
 
 var appContainer = document.querySelector("#app");
@@ -51,9 +41,11 @@ var appContainer = document.querySelector("#app");
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
+			<IndexRoute component={Home} />
 			<Route path="home" component={Home} />
 			<Route path="english" component={English} />
 			<Route path="korean" component={Korean} />
+			<Route path="enter" component={Enter} />
 		</Route>
 	</Router>,
 	appContainer

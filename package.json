@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.2.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-open-weather-map": "^2.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

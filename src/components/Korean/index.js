@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
+
+import grumpycat from '../../img/grumpy_cat.png'
 
 class Korean extends Component {
 	render() {
 		return(
-			<div>잘 부탁 합니다</div>
+			<div>
+				<Link to="/enter">
+					<img src={grumpycat} alt=""/>
+				</Link>
+				
+				<p>잘 부탁 합니다</p>
+			</div>
 		)
 	}
 }

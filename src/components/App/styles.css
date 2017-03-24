@@ -4,9 +4,9 @@ html, body {
   padding: 0;
   font-family: Helvetica, Arial;
   font-weight: 100; }
-  html .appWrapper .landingPage a, body .appWrapper .landingPage a {
+  html .homeWrapper .landingPage a, body .homeWrapper .landingPage a {
     text-decoration: none; }
-  html .appWrapper .landingPage .grittyTitle, body .appWrapper .landingPage .grittyTitle {
+  html .homeWrapper .landingPage .grittyTitle, body .homeWrapper .landingPage .grittyTitle {
     position: absolute;
     height: 60vh;
     margin-top: -30vh;
@@ -14,7 +14,7 @@ html, body {
     margin-left: -60vw;
     top: 50%;
     left: 50%; }
-  html .appWrapper .landingPage .landingTitle, body .appWrapper .landingPage .landingTitle {
+  html .homeWrapper .landingPage .landingTitle, body .homeWrapper .landingPage .landingTitle {
     font-size: 50px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -23,9 +23,9 @@ html, body {
     -o-animation: color-change 2s infinite;
     -ms-animation: color-change 2s infinite;
     animation: color-change 2s infinite; }
-    html .appWrapper .landingPage .landingTitle span.nl, body .appWrapper .landingPage .landingTitle span.nl {
+    html .homeWrapper .landingPage .landingTitle span.nl, body .homeWrapper .landingPage .landingTitle span.nl {
       display: block; }
-    html .appWrapper .landingPage .landingTitle span.enter, body .appWrapper .landingPage .landingTitle span.enter {
+    html .homeWrapper .landingPage .landingTitle span.enter, body .homeWrapper .landingPage .landingTitle span.enter {
       display: block;
       font-size: 14px; }
 @-webkit-keyframes color-change {
