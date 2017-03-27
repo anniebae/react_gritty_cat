@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, IndexLink, Link, hashHistory } from 'react-router'
 
 import css from './styles.css'
-import Home from '../Home'
+import Landing from '../Landing'
 import English from '../English'
 import Korean from '../Korean'
-import Enter from '../Enter'
+import Home from '../Home'
 
 import grumpycat from '../../img/grumpy_cat.png'
 
@@ -41,11 +41,11 @@ var appContainer = document.querySelector("#app");
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
-			<IndexRoute component={Home} />
-			<Route path="home" component={Home} />
+			<IndexRoute component={Landing} />
+			<Route path="landing" component={Landing} />
 			<Route path="english" component={English} />
 			<Route path="korean" component={Korean} />
-			<Route path="enter" component={Enter} />
+			<Route path="home" component={Home} />
 		</Route>
 	</Router>,
 	appContainer

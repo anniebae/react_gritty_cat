@@ -12666,7 +12666,7 @@ var English = function (_Component) {
 				null,
 				_react2.default.createElement(
 					_reactRouter.Link,
-					{ to: '/enter' },
+					{ to: '/home' },
 					_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
 				),
 				_react2.default.createElement(
@@ -12702,13 +12702,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(71);
 
-var _styles = __webpack_require__(248);
+var _grumpy_cat = __webpack_require__(116);
 
-var _styles2 = _interopRequireDefault(_styles);
-
-var _jquery = __webpack_require__(143);
-
-var _jquery2 = _interopRequireDefault(_jquery);
+var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12728,37 +12724,35 @@ var Home = function (_Component) {
 	}
 
 	_createClass(Home, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			// alert('hello home')
-		}
-	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ className: 'homeWrapper' },
+				null,
 				_react2.default.createElement(
 					'div',
-					{ className: 'landingPage' },
+					null,
 					_react2.default.createElement(
 						_reactRouter.Link,
-						{ to: '/enter' },
+						{ to: '/home' },
+						_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
+					),
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/english' },
 						_react2.default.createElement(
 							'p',
-							{ className: 'landingTitle grittyTitle' },
-							'let\'s ',
-							_react2.default.createElement(
-								'span',
-								{ className: 'nl' },
-								'get'
-							),
-							' GRITTY',
-							_react2.default.createElement(
-								'span',
-								{ className: 'enter' },
-								'ENTER \u2192'
-							)
+							null,
+							'hello page'
+						)
+					),
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/korean' },
+						_react2.default.createElement(
+							'p',
+							null,
+							'\uC548\uB155\uD558\uC138\uC694'
 						)
 					)
 				)
@@ -12819,7 +12813,7 @@ var Korean = function (_Component) {
 				null,
 				_react2.default.createElement(
 					_reactRouter.Link,
-					{ to: '/enter' },
+					{ to: '/home' },
 					_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
 				),
 				_react2.default.createElement(
@@ -39474,52 +39468,14 @@ exports = module.exports = __webpack_require__(72)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald);", ""]);
 
 // module
-exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: Helvetica, Arial;\n  font-weight: 100; }\n  html .homeWrapper .landingPage a, body .homeWrapper .landingPage a {\n    text-decoration: none; }\n  html .homeWrapper .landingPage .grittyTitle, body .homeWrapper .landingPage .grittyTitle {\n    position: absolute;\n    height: 60vh;\n    margin-top: -30vh;\n    width: 120vw;\n    margin-left: -60vw;\n    top: 50%;\n    left: 50%; }\n  html .homeWrapper .landingPage .landingTitle, body .homeWrapper .landingPage .landingTitle {\n    font-size: 50px;\n    text-align: center;\n    font-family: 'Oswald', sans-serif;\n    -webkit-animation: color-change 2s infinite;\n    -moz-animation: color-change 2s infinite;\n    -o-animation: color-change 2s infinite;\n    -ms-animation: color-change 2s infinite;\n    animation: color-change 2s infinite; }\n    html .homeWrapper .landingPage .landingTitle span.nl, body .homeWrapper .landingPage .landingTitle span.nl {\n      display: block; }\n    html .homeWrapper .landingPage .landingTitle span.enter, body .homeWrapper .landingPage .landingTitle span.enter {\n      display: block;\n      font-size: 14px; }\n@-webkit-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-moz-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-ms-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-o-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n\n/*# sourceMappingURL=styles.css.map */\n", ""]);
+exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: Helvetica, Arial;\n  font-weight: 100; }\n  html .landingWrapper .landingPage a, body .landingWrapper .landingPage a {\n    text-decoration: none; }\n  html .landingWrapper .landingPage .grittyTitle, body .landingWrapper .landingPage .grittyTitle {\n    position: absolute;\n    height: 60vh;\n    margin-top: -30vh;\n    width: 120vw;\n    margin-left: -60vw;\n    top: 50%;\n    left: 50%; }\n  html .landingWrapper .landingPage .landingTitle, body .landingWrapper .landingPage .landingTitle {\n    font-size: 50px;\n    text-align: center;\n    font-family: 'Oswald', sans-serif;\n    -webkit-animation: color-change 2s infinite;\n    -moz-animation: color-change 2s infinite;\n    -o-animation: color-change 2s infinite;\n    -ms-animation: color-change 2s infinite;\n    animation: color-change 2s infinite; }\n    html .landingWrapper .landingPage .landingTitle span.nl, body .landingWrapper .landingPage .landingTitle span.nl {\n      display: block; }\n    html .landingWrapper .landingPage .landingTitle span.enter, body .landingWrapper .landingPage .landingTitle span.enter {\n      display: block;\n      font-size: 14px; }\n@-webkit-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-moz-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-ms-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@-o-keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n@keyframes color-change {\n  0% {\n    color: #ddd; }\n  50% {\n    color: #07f7cf; }\n  100% {\n    color: #ddd; } }\n\n/*# sourceMappingURL=styles.css.map */\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 247 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(72)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 248 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(247);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(111)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 247 */,
+/* 248 */,
 /* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39542,9 +39498,9 @@ var _styles = __webpack_require__(117);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _Home = __webpack_require__(114);
+var _Landing = __webpack_require__(254);
 
-var _Home2 = _interopRequireDefault(_Home);
+var _Landing2 = _interopRequireDefault(_Landing);
 
 var _English = __webpack_require__(113);
 
@@ -39554,9 +39510,9 @@ var _Korean = __webpack_require__(115);
 
 var _Korean2 = _interopRequireDefault(_Korean);
 
-var _Enter = __webpack_require__(250);
+var _Home = __webpack_require__(114);
 
-var _Enter2 = _interopRequireDefault(_Enter);
+var _Home2 = _interopRequireDefault(_Home);
 
 var _grumpy_cat = __webpack_require__(116);
 
@@ -39616,16 +39572,20 @@ _reactDom2.default.render(_react2.default.createElement(
 	_react2.default.createElement(
 		_reactRouter.Route,
 		{ path: '/', component: App },
-		_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-		_react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default }),
+		_react2.default.createElement(_reactRouter.IndexRoute, { component: _Landing2.default }),
+		_react2.default.createElement(_reactRouter.Route, { path: 'landing', component: _Landing2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'english', component: _English2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'korean', component: _Korean2.default }),
-		_react2.default.createElement(_reactRouter.Route, { path: 'enter', component: _Enter2.default })
+		_react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default })
 	)
 ), appContainer);
 
 /***/ }),
-/* 250 */
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39643,9 +39603,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(71);
 
-var _grumpy_cat = __webpack_require__(116);
+var _styles = __webpack_require__(256);
 
-var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
+var _styles2 = _interopRequireDefault(_styles);
+
+var _jquery = __webpack_require__(143);
+
+var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39655,45 +39619,47 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Enter = function (_Component) {
-	_inherits(Enter, _Component);
+var Landing = function (_Component) {
+	_inherits(Landing, _Component);
 
-	function Enter() {
-		_classCallCheck(this, Enter);
+	function Landing() {
+		_classCallCheck(this, Landing);
 
-		return _possibleConstructorReturn(this, (Enter.__proto__ || Object.getPrototypeOf(Enter)).apply(this, arguments));
+		return _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).apply(this, arguments));
 	}
 
-	_createClass(Enter, [{
+	_createClass(Landing, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			// alert('hello Hello')
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'landingWrapper' },
 				_react2.default.createElement(
 					'div',
-					null,
+					{ className: 'landingPage' },
 					_react2.default.createElement(
 						_reactRouter.Link,
-						{ to: '/enter' },
-						_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
-					),
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/english' },
+						{ to: '/home' },
 						_react2.default.createElement(
 							'p',
-							null,
-							'hello page'
-						)
-					),
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/korean' },
-						_react2.default.createElement(
-							'p',
-							null,
-							'\uC548\uB155\uD558\uC138\uC694'
+							{ className: 'landingTitle grittyTitle' },
+							'let\'s ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'nl' },
+								'get'
+							),
+							' GRITTY',
+							_react2.default.createElement(
+								'span',
+								{ className: 'enter' },
+								'ENTER \u2192'
+							)
 						)
 					)
 				)
@@ -39701,10 +39667,50 @@ var Enter = function (_Component) {
 		}
 	}]);
 
-	return Enter;
+	return Landing;
 }(_react.Component);
 
-exports.default = Enter;
+exports.default = Landing;
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(72)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(255);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(111)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./styles.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

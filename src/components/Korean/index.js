@@ -7,7 +7,7 @@ class Korean extends Component {
 	render() {
 		return(
 			<div>
-				<Link to="/enter">
+				<Link to="/home">
 					<img src={grumpycat} alt=""/>
 				</Link>
 				

@@ -8,7 +8,7 @@ class English extends Component {
 		return(
 
 			<div>
-				<Link to="/enter">
+				<Link to="/home">
 					<img src={grumpycat} alt=""/>
 				</Link>
 				<p>hey whats up hello</p>

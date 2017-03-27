@@ -1,26 +1,24 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import css from './styles.css'
-import $ from 'jquery'
-
-
-
+import grumpycat from '../../img/grumpy_cat.png'
 
 class Home extends Component {
-	componentDidMount() {
-		// alert('hello home')
-	}
 	render() {
 		return (
-			<div className="homeWrapper">
-				<div className="landingPage">
-					<Link to="/enter">
-						<p className="landingTitle grittyTitle">let's <span className="nl">get</span> GRITTY
-							<span className="enter">ENTER &#8594;</span>
-						</p>
+			<div>
+				<div>
+					<Link to="/home">
+						<img src={grumpycat} alt=""/>
+					</Link>
+
+					<Link to="/english">
+						<p>hello page</p>
+					</Link>
+
+					<Link to="/korean">
+						<p>안녕하세요</p>
 					</Link>
 				</div>
-				
 			</div>
 		)
 	}
