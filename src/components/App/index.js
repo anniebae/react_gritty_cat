@@ -20,7 +20,6 @@ class App extends Component {
 		console.log(this.state);
 	}
 
-
 	render() {
 		const { loading } = this.props;
 
@@ -35,8 +34,6 @@ class App extends Component {
 }
 
 var appContainer = document.querySelector("#app");
-// ReactDOM.render(<App />, appContainer);
-
 
 ReactDOM.render(
 	<Router history={hashHistory}>

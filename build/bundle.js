@@ -12637,9 +12637,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(71);
 
-var _grumpy_cat = __webpack_require__(116);
+var _Home = __webpack_require__(114);
 
-var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
+var _Home2 = _interopRequireDefault(_Home);
+
+var _GrumpyCat = __webpack_require__(257);
+
+var _GrumpyCat2 = _interopRequireDefault(_GrumpyCat);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12664,11 +12668,7 @@ var English = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: '/home' },
-					_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
-				),
+				_react2.default.createElement(_GrumpyCat2.default, null),
 				_react2.default.createElement(
 					'p',
 					null,
@@ -12702,6 +12702,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(71);
 
+var _GrumpyCat = __webpack_require__(257);
+
+var _GrumpyCat2 = _interopRequireDefault(_GrumpyCat);
+
 var _grumpy_cat = __webpack_require__(116);
 
 var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
@@ -12732,11 +12736,7 @@ var Home = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/home' },
-						_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
-					),
+					_react2.default.createElement(_GrumpyCat2.default, null),
 					_react2.default.createElement(
 						_reactRouter.Link,
 						{ to: '/english' },
@@ -12784,9 +12784,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(71);
 
-var _grumpy_cat = __webpack_require__(116);
+var _GrumpyCat = __webpack_require__(257);
 
-var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
+var _GrumpyCat2 = _interopRequireDefault(_GrumpyCat);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12811,11 +12811,7 @@ var Korean = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: '/home' },
-					_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
-				),
+				_react2.default.createElement(_GrumpyCat2.default, null),
 				_react2.default.createElement(
 					'p',
 					null,
@@ -39563,8 +39559,6 @@ var App = function (_Component) {
 }(_react.Component);
 
 var appContainer = document.querySelector("#app");
-// ReactDOM.render(<App />, appContainer);
-
 
 _reactDom2.default.render(_react2.default.createElement(
 	_reactRouter.Router,
@@ -39711,6 +39705,66 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(71);
+
+var _grumpy_cat = __webpack_require__(116);
+
+var _grumpy_cat2 = _interopRequireDefault(_grumpy_cat);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GrumpyCat = function (_Component) {
+	_inherits(GrumpyCat, _Component);
+
+	function GrumpyCat() {
+		_classCallCheck(this, GrumpyCat);
+
+		return _possibleConstructorReturn(this, (GrumpyCat.__proto__ || Object.getPrototypeOf(GrumpyCat)).apply(this, arguments));
+	}
+
+	_createClass(GrumpyCat, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: '/home' },
+					_react2.default.createElement('img', { src: _grumpy_cat2.default, alt: '' })
+				)
+			);
+		}
+	}]);
+
+	return GrumpyCat;
+}(_react.Component);
+
+exports.default = GrumpyCat;
 
 /***/ })
 /******/ ]);

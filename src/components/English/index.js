@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-
-import grumpycat from '../../img/grumpy_cat.png'
+import Home from '../Home'
+import GrumpyCat from '../GrumpyCat'
 
 class English extends Component {
 	render() {
 		return(
 
 			<div>
-				<Link to="/home">
-					<img src={grumpycat} alt=""/>
-				</Link>
+				<GrumpyCat />
 				<p>hey whats up hello</p>
 			</div>
 		)
