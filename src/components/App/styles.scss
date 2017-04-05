@@ -6,17 +6,13 @@ html, body {
 	font-family: Helvetica, Arial;
 	font-weight: 100;
 
+	.appWrapper {
+		text-align: center;
+	}
+
 	.landingWrapper {
 
 		.landingPage {
-			// .landingTitle {
-			// 	text-align: center;
-			// 	font-family: 'Oswald', sans-serif;
-
-			// 	span.nl {
-			// 		display: block;
-			// 	}
-			// }
 			a {
 				text-decoration: none;
 			}
