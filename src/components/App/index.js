@@ -20,6 +20,10 @@ class App extends Component {
 		console.log(this.state);
 	}
 
+	componentDidMount() {
+		alert('did mount')
+	}
+
 	render() {
 		const { loading } = this.props;
 

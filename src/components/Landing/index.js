@@ -7,8 +7,8 @@ import $ from 'jquery'
 
 
 class Landing extends Component {
-	componentDidMount() {
-		// alert('hello Hello')
+	componentDidlMount() {
+		alert('hello Hello')
 	}
 	render() {
 		return (
