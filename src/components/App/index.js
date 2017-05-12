@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, IndexLink, Link, hashHistory } from 'react-r
 
 import css from './styles.css'
 import Landing from '../Landing'
-import English from '../English'
+import Todo from '../Todo'
 import Korean from '../Korean'
 import Home from '../Home'
 
@@ -44,7 +44,7 @@ ReactDOM.render(
 		<Route path="/" component={App}>
 			<IndexRoute component={Landing} />
 			<Route path="landing" component={Landing} />
-			<Route path="english" component={English} />
+			<Route path="todo" component={Todo} />
 			<Route path="korean" component={Korean} />
 			<Route path="home" component={Home} />
 		</Route>

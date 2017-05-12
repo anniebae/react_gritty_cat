@@ -11,8 +11,8 @@ class Home extends Component {
 				<GrumpyCat />
 
 				<div className="pages">
-					<Link to="/english">
-						<p>hello page</p>
+					<Link to="/todo">
+						<p>Todo List</p>
 					</Link>
 
 					<Link to="/korean">

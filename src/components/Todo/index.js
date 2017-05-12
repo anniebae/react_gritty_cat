@@ -3,16 +3,16 @@ import { Link } from 'react-router'
 import Home from '../Home'
 import GrumpyCat from '../GrumpyCat'
 
-class English extends Component {
+class Todo extends Component {
 	render() {
 		return(
 
 			<div>
 				<GrumpyCat />
-				<p>hey whats up hello</p>
+				<p>Todo app</p>
 			</div>
 		)
 	}
 }
 
-export default English
+export default Todo
