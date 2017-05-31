@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 import Home from '../Home'
 import GrumpyCat from '../GrumpyCat'
 
+import {AddNewTask} from './addtask'
+
 class Todo extends Component {
 	render() {
 		return(
@@ -10,6 +12,7 @@ class Todo extends Component {
 			<div>
 				<GrumpyCat />
 				<p>Todo app</p>
+				<AddNewTask />
 			</div>
 		)
 	}
