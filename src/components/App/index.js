@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, IndexLink, Link, hashHistory } from 'react-r
 
 import css from './styles.css'
 import Landing from '../Landing'
-import Todo from '../Todo'
+import {Todo} from '../Todo'
 import Korean from '../Korean'
 import Home from '../Home'
 
