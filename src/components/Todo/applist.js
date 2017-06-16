@@ -13,7 +13,9 @@ export class ToDoAppList extends Component {
 
 	render() {
 		var items = this.props.tasks.map((elem, i) => {
-			return <li key={i}><span>{elem}</span><button onClick={this.remove}>X</button></li>
+			return <li key={i}>
+						<span>{elem}</span><button onClick={this.remove}>X</button>
+					</li>
 		});
 
 		// get items dynamically from its parent
